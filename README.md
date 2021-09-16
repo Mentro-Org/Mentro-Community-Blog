@@ -63,7 +63,7 @@ Hurray! You successfully made a contribution! :partying_face:🎉
 
 ## :speech_balloon: FAQ and Other Questions 
 
-- If you have a general question about a project or repository or mentro, submit a message to the relevant channel on mentro's discord: https://discord.gg/nEmAFyFv
-- If you have other questions, please write to contact@mentro.tech
+- If you have a general question about a project or repository or about mentro, submit a message to the relevant channel on mentro's discord: https://discord.gg/nEmAFyFv
+- If you have other questions, please write us at contact@mentro.tech
 
 
