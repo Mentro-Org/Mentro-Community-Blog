@@ -1,12 +1,20 @@
 # Mentro-Community-Website
 
-Community website is for contributors to get a glimpse of mentro. The website also includes blogs and guides by the mentrozens to help you better understand our work and learn from others experience.
+![Discord](https://img.shields.io/discord/861211593580085278?label=Discord&logo=Discord&logoColor=%2354d747)
+![GitHub contributors](https://img.shields.io/github/contributors/Mentro-Org/Mentro-Community-Website?color=%2354d747&logo=Github&logoColor=%2354d747) 
+[![GitHub issues](https://img.shields.io/github/issues/Mentro-Org/Mentro-Community-Website)](https://github.com/Mentro-Org/Mentro-Community-Website/issues) 
+[![GitHub stars](https://img.shields.io/github/stars/Mentro-Org/Mentro-Community-Website?color=%2354d747)](https://github.com/Mentro-Org/Mentro-Community-Website/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/Mentro-Org/Mentro-Community-Website?color=%2354d747&logo=Github&logoColor=%2354d747)](https://github.com/Mentro-Org/Mentro-Community-Website/network)
+
+
+
+:memo: Community website is for contributors to get a glimpse of mentro. The website also includes blogs and guides by the mentrozens to help you better understand our work and learn from others experience. 
 
 ## :writing_hand: What is Mentro?
 [Mentro](https://mentro.tech/app) is a mentorship platform which connects you with mentors from great startups & companies like Microsoft, Cred, Zomato, Google, Amazon, Jio, Flipkart, Gojek, Goldman Sachs & many more. 
 
 
-## :writing_hand: How to Contribute?
+## How to Contribute? :point_down:
 
 1. Fork the repository
 
@@ -25,7 +33,7 @@ npm install
 npm run start
 ```
 
-## :writing_hand: How to make a pull request?
+## How to make a pull request? 	:man_technologist:
 
 1. After cloning the repository you can switch to the cloned repo on your local machine.
 ```
@@ -64,6 +72,6 @@ Hurray! You successfully made a contribution! :partying_face:🎉
 ## :speech_balloon: FAQ and Other Questions 
 
 - If you have a general question about a project or repository or about mentro, submit a message to the relevant channel on mentro's discord: https://discord.gg/nEmAFyFv
-- If you have other questions, please write us at contact@mentro.tech
+- If you have other questions, please write us at 	:e-mail: contact@mentro.tech
 
 
