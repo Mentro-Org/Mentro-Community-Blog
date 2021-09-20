@@ -1,4 +1,4 @@
-# Mentro-Community-Website
+# Mentro-Community-Blog
 
 ![Discord](https://img.shields.io/discord/861211593580085278?label=Discord&logo=Discord&logoColor=%2354d747)
 ![GitHub contributors](https://img.shields.io/github/contributors/Mentro-Org/Mentro-Community-Website?color=%2354d747&logo=Github&logoColor=%2354d747) 
