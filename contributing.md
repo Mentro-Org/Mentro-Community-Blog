@@ -2,7 +2,7 @@
 
 
 ### Visit
-http://community.blog.mentro.tech
+https://community.blog.mentro.tech
 
 ## To run locally:
 
@@ -16,14 +16,11 @@ http://community.blog.mentro.tech
 
 ## how to Commit
 
-1. bundle exec jekyll build ***Don't Forget To Run This***
-2. git add .
-3. git commit -m "Comment"
+1. git add .
+2. git commit -m "Comment"
 
 
 ## Editting
-
-**_Remember Restarting the Server After Updating the Config_**
 
 ### Adding Authors
 

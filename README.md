@@ -1,6 +1,6 @@
 # Mentro-Community-Blog 
 
-http://community.blog.mentro.tech
+https://community.blog.mentro.tech
 
 <h2 align="center">We are excited to be a part of :point_down:</h2>
 
