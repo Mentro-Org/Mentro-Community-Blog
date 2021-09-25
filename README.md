@@ -18,11 +18,11 @@
   <img src="https://img.shields.io/github/forks/Mentro-Org/Mentro-Community-Website?color=red&logo=Github&logoColor=%2354d747)](https://github.com/Mentro-Org/Mentro-Community-Website/network)" >
 </p>
 
-<!-- ![Discord](https://img.shields.io/discord/861211593580085278?label=Discord&logo=Discord&logoColor=%2354d747)
+![Discord](https://img.shields.io/discord/861211593580085278?label=Discord&logo=Discord&logoColor=%2354d747)
 ![GitHub contributors](https://img.shields.io/github/contributors/Mentro-Org/Mentro-Community-Website?color=%2354d747&logo=Github&logoColor=%2354d747) 
 [![GitHub issues](https://img.shields.io/github/issues/Mentro-Org/Mentro-Community-Website)](https://github.com/Mentro-Org/Mentro-Community-Website/issues) 
 [![GitHub stars](https://img.shields.io/github/stars/Mentro-Org/Mentro-Community-Website?color=%2354d747)](https://github.com/Mentro-Org/Mentro-Community-Website/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/Mentro-Org/Mentro-Community-Website?color=%2354d747&logo=Github&logoColor=%2354d747)](https://github.com/Mentro-Org/Mentro-Community-Website/network) -->
+[![GitHub forks](https://img.shields.io/github/forks/Mentro-Org/Mentro-Community-Website?color=%2354d747&logo=Github&logoColor=%2354d747)](https://github.com/Mentro-Org/Mentro-Community-Website/network)
 
 :point_right: We have created a curated list of issues for you to get started with
 
