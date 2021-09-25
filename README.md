@@ -99,7 +99,7 @@ npm run start
    
    Wait for your changes to be merged.
 
-Hurray! You successfully made a contribution! :partying_face:🎉
+Hurray! You have successfully made a contribution! :partying_face:🎉
 
 ## :speech_balloon: FAQ and Other Questions 
 
