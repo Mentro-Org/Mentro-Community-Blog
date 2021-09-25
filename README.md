@@ -37,9 +37,9 @@
 
 ## Table Of Contents:
 
-* [What is Mentro](#what is mentro)
-* [Contributing Guidelines](#how to contribute)
-* [Make a PR](#how to make a pullrequest)
+* [What is Mentro](#what--is--mentro)
+* [Contributing Guidelines](#how--to--contribute)
+* [Make a PR](#how--to--make--a--pullrequest)
 
 
 ## :writing_hand: What is Mentro?
