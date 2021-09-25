@@ -1,0 +1,20 @@
+# # To get the latest firebase build file: https://cloud.google.com/cloud-build/docs/deploying-builds/deploy-firebase
+
+# # To get the latest firebase build file: https://cloud.google.com/cloud-build/docs/deploying-builds/deploy-firebase
+
+# steps:
+#   - name: gcr.io/cloud-builders/gcloud
+#     id: 'firebase-image-submit'
+#     entrypoint: 'bash'
+#     args:
+#       - '-c'
+#       - |
+#         echo $_ROBOTS_TXT >> _site/robots.txt
+#         cd firebase
+#         ls
+#         gcloud builds submit .
+  
+  
+#   - name: gcr.io/$PROJECT_ID/firebase-image
+#     waitFor: ['firebase-image-submit']
+#     args: ['deploy', '--project=anc-ang-dev-firebase', '--only=hosting:$_TARGET_NAME']

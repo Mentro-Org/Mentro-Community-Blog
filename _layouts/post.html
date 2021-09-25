@@ -1,0 +1,190 @@
+---
+layout: default
+---
+{% assign author = site.authors[page.author] %}
+<div class="container">
+<div class="jumbotron jumbotron-fluid mb-3 pl-0 pt-0 pb-0 bg-white position-relative">
+		<div class="h-100 tofront">
+			<div class="row {% if page.image %} justify-content-between {% else %} justify-content-center {% endif %}">
+				<div class="{% if page.image %} col-md-6 {% else %} col-md-8 {% endif %} pr-0 pr-md-4 pt-4 pb-4 align-self-center">
+					<p class="text-uppercase font-weight-bold">
+                        <span class="catlist">
+                          <a class="sscroll text-danger" href="/{{ page.category | downcase }}">{{ page.category }}</a>
+                        </span>
+					</p>
+					<h1 class="display-4 mb-4 article-headline">{{ page.title }}</h1>
+					<div class="d-flex align-items-center">
+						<a href="/author/{{page.author}}/">
+							<div class="author-div d-flex">
+								{% if author.avatar %}
+								<img class="rounded-circle" src="{{author.avatar}}" alt="{{author.name}}" width="90" height="90"/>
+								{% endif %}
+								
+								<div class="ml-3"> 
+									<small>{{ author.name }}
+									<span class="text-muted d-block mt-1 ">{{ author.bio | truncate: 52 }}</span>
+									<span class="text-muted d-block mt-1">{{ page.date | date: '%b %d, %Y' }} · {% include meta-read-time.html %}</span>
+									</small>
+									<div  class="d-flex" style="margin: auto;">
+										{% if site.authors[page.author].twitter %}
+											<div class="social-link">
+												<a href="{{ site.authors[page.author].twitter }}" target="_blank">
+													<i class="fab fa-twitter" style="font-size: 50px;"></i>
+												</a>
+											</div>
+											{% endif %}
+											{% if site.authors[page.author].linkedin %}
+											<div class="social-link">
+												<a href="{{ site.authors[page.author].linkedin }}" target="_blank">
+													<i class="fab fa-linkedin" style="font-size: 50px;"></i>
+												</a>
+											</div>
+											{% endif %}
+											{% if site.authors[page.author].medium %}
+											<div class="social-link">
+												<a href="{{ site.authors[page.author].medium }}" target="_blank">
+													<i class="fab fa-medium" style="font-size: 50px;"></i>
+												</a>
+											</div>
+										{% endif %}
+									</div>
+								</div>
+								
+							</div>
+						</a>
+					</div>
+
+				</div>
+                {% if page.image %}
+				<div class="col-md-6 pr-0 align-self-center">
+					<img class="rounded" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ page.image }}{% endif %}" alt="{{ page.title }}">
+				</div>
+                {% endif %}
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<div class="container-lg pt-4 pb-4">
+	<div class="row justify-content-center">
+        
+        
+        <!-- Share -->
+		<div class="col-lg-2 pr-4 mb-4 col-md-12">
+			<div class="sticky-top sticky-top-offset text-center">
+				<div class="text-muted">
+					Share this
+				</div>
+				<div class="share d-inline-block">
+					<!-- AddToAny BEGIN -->
+					<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+						<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+						<a class="a2a_button_facebook"></a>
+						<a class="a2a_button_twitter"></a>
+						<a class="a2a_button_linkedin"></a>
+						<a class="a2a_button_whatsapp"></a>
+					</div>
+					<script async src="https://static.addtoany.com/menu/page.js"></script>
+					<!-- AddToAny END -->
+				</div>
+			</div>
+		</div>
+        
+        
+		<div class="col-md-12 col-lg-8 post-content">
+            
+            <!-- Article -->
+			<article class="article-post">                
+			{{ content }}                
+			</article>
+			
+			<!-- Tags -->
+			<div class="mb-4">
+				<span class="taglist">
+				{% for tag in page.tags %}
+				  <a class="sscroll btn btn-outline-success btn-sm font-weight-bold" href="/tags/#{{ tag | downcase }}">{{ tag | downcase }}</a>
+				{% endfor %}
+				<a class="sscroll btn btn-outline-success btn-sm font-weight-bold" href="/{{ page.category | downcase }}/">{{ page.category | downcase }}</a>
+				</span>
+			</div>
+ 
+            <!-- Mailchimp Subscribe Form -->
+            {% if site.mailchimp-list %}
+			<div class="border p-5 bg-lightblue">
+				<div class="row justify-content-between">
+					<div class="col-md-6 mb-2 mb-md-0">
+						<h5 class="font-weight-bold">Join Newsletter</h5>
+						 Get the latest news right in your inbox. We never spam!
+					</div>
+					<div class="col-md-6">
+						<div class="row">
+                            <form action="{{site.mailchimp-list}}" method="post" name="mc-embedded-subscribe-form" class="wj-contact-form validate w-100" target="_blank" novalidate>
+                            <div class="mc-field-group">
+							
+								<input type="email" placeholder="Enter e-mail address" name="EMAIL" class="required email form-control w-100" id="mce-EMAIL" autocomplete="on" required>
+							
+							
+								<button type="submit" value="Subscribe" name="subscribe" class="heart btn btn-success btn-block w-100 mt-2">Subscribe</button>
+							
+                            </div>
+                            </form>
+						</div>
+					</div>
+				</div>
+			</div>
+            {% endif %}
+            
+            
+             <!-- Author Box -->
+                {% if page.author %}				
+				<div class="row mt-5">
+					<div class="author-div col-md-2">
+						{% if author.avatar %}
+						<img class="rounded-circle" src="{{author.avatar}}" alt="{{author.name}}" width="90"/>
+						{% endif %} 
+					</div>
+					<a href="/author/{{page.author}}/">
+						<div class="col-md-10">		
+							<h5 class="font-weight-bold">Written by {{ author.name }} {% if author.twitter %}<span><a target="_blank" href="{{ author.twitter }}" class="btn btn-outline-success btn-sm btn-round ml-2">Follow</a></span>{% endif %}</h5>
+							{{ author.bio }}					
+						
+							<div  class="d-flex" >
+							{% if site.authors[page.author].twitter %}
+								<div class="social-link">
+									<a href="{{ site.authors[page.author].twitter }}" target="_blank">
+										<i class="fab fa-twitter" style="font-size: 50px;"></i>
+									</a>
+								</div>
+								{% endif %}
+								{% if site.authors[page.author].linkedin %}
+								<div class="social-link">
+									<a href="{{ site.authors[page.author].linkedin }}" target="_blank">
+										<i class="fab fa-linkedin" style="font-size: 50px;"></i>
+									</a>
+								</div>
+								{% endif %}
+								{% if site.authors[page.author].medium %}
+								<div class="social-link">
+									<a href="{{ site.authors[page.author].medium }}" target="_blank">
+										<i class="fab fa-medium" style="font-size: 50px;"></i>
+									</a>
+								</div>
+							{% endif %}
+						</div>
+					</div>
+					</a>
+				</div>				
+                {% endif %}
+            
+            <!-- Comments -->
+            
+		</div>
+        
+        
+	</div>
+</div>
+

@@ -1,0 +1,46 @@
+---
+layout: default
+---
+<div class="container">
+<div class="row justify-content-center">
+    <div class="col-md-8">        
+        <div class="row align-items-center mb-5">
+            <div class="col-md-9" style="padding: 0;">
+                <h2 class="font-weight-bold">{{site.authors[page.author].name}}</h2>
+                <p><a target="_blank" href="{{ site.authors[page.author].site }}">{{ site.authors[page.author].site }}</a></p>
+                <p class="excerpt">{{ site.authors[page.author].bio }}</p>
+
+            </div>
+            <div class="author-div col-md-3 text-right">
+                <img alt="{{ site.authors[page.author].name }}" src="{{ site.authors[page.author].avatar }}" class="rounded-circle" height="100" width="100">
+            </div>
+            {% if site.authors[page.author].twitter %}
+            <div class="social-link">
+                <a href="{{ site.authors[page.author].twitter }}" target="_blank">
+                    <i class="fab fa-twitter" style="font-size: 50px;"></i>
+                </a>
+            </div>
+            {% endif %}
+            {% if site.authors[page.author].linkedin %}
+            <div class="social-link">
+                <a href="{{ site.authors[page.author].linkedin }}" target="_blank">
+                    <i class="fab fa-linkedin" style="font-size: 50px;"></i>
+                </a>
+            </div>
+            {% endif %}
+            {% if site.authors[page.author].medium %}
+            <div class="social-link">
+                <a href="{{ site.authors[page.author].medium }}" target="_blank">
+                    <i class="fab fa-medium" style="font-size: 50px;"></i>
+                </a>
+            </div>
+            {% endif %}
+        </div>
+        <h4 class="font-weight-bold spanborder"><span>Posts by {{site.authors[page.author].name}}</span></h4>
+            {% assign posts = site.posts | where:"author", page.author %}
+            {% for post in posts %}
+            {% include main-loop-card.html %}
+            {% endfor %}
+    </div>
+</div>
+</div>

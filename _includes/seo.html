@@ -1,0 +1,73 @@
+    {% if page.keywords or page.categories or page.tags %}
+    <meta name="keywords" content="{% for keyword in page.keywords %}{% if forloop.first %}{% else %}, {% endif %}{{keyword}}{% endfor %}{% for keyword in page.categories %}, {{keyword}}{% endfor %}{% for keyword in page.tags %}, {{keyword}}{% endfor %}" />
+    {% endif %}
+    <meta name="url" content="{{site.url}}{{page.url}}" />
+    <meta name="title" content="{{page.title}}" />
+    <meta name="description" content="{{page.description}}" />
+    {% if page.image %}<meta name="image" content="{{site.url}}{{page.image}}" />{% endif %}
+    {% if page.author and site.authors[page.author].name %}<meta name="author" content="{{site.authors[page.author].name}}" />{% endif %}
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    
+    
+
+    <meta property="og:site_name" content="{{site.name}}" />
+    <meta property="og:url" content="{{site.url}}{{page.url}}" />
+    <meta property="og:title" content="{{page.title}}" />
+    <meta property="og:description" content="{{page.description}}" />
+    {% if page.image %}<meta property="og:image" content="{{site.url}}{{page.image}}" />{% endif %}
+    {% if page.layout == "post" %}<meta property="og:type" content="article" />{% endif %}
+    {% if page.layout == "default" %}<meta property="og:type" content="website" />{% endif %}
+
+
+    <meta name="twitter:card" content="summary_large_image"/>
+    {% if site.iosAppName and site.iosAppName != "" %}<meta name="twitter:app:name:iphone" content="{{site.iosAppName}}"/>{% endif %}
+    {% if site.iosAppID and site.iosAppID != "" %}<meta name="twitter:app:id:iphone" content="{{site.iosAppID}}"/>{% endif %}
+    {% if site.twitterHandle and site.twitterHandle != "" %}<meta name="twitter:site" content="{{site.twitterHandle}}"/>{% endif %}
+    <meta name="twitter:url" content="{{site.url}}{{page.url}}"/>
+    <meta name="twitter:title" content="{{page.title}}"/>
+    {% if page.description %}<meta name="twitter:description" content="{{page.description}}"/>{% endif %}
+    {% if page.image %}<meta name="twitter:image:src" content="{{site.url}}{{page.image}}"/>{% endif %}
+
+    {% if site.facebookAppID and site.facebookAppID != "" %}<meta property="fb:app_id" content="{{site.facebookAppID}}"/>{% endif %}
+
+    {% if site.iosAppName and site.iosAppName != "" %}<meta property="al:ios:app_name" content="{{site.iosAppName}}"/>{% endif %}
+    {% if site.iosAppID and site.iosAppID != "" %}<meta property="al:ios:app_store_id" content="{{site.iosAppID}}"/>{% endif %}
+    {% if site.androidAppName and site.androidAppName != "" %}<meta property="al:android:app_name" content="{{site.androidAppName}}"/>{% endif %}
+    {% if site.androidAppPackage and site.androidAppPackage != "" %}<meta property="al:android:package" content="{{site.androidAppPackage}}" />{% endif %}
+    <meta property="al:web:url" content="{{site.url}}{{page.url}}"/>
+    
+    {% if page.layout == "post" %}
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "image": ["{{site.url}}{{page.image}}", "{{site.url}}{{site.logo}}"],
+        "url": "{{site.url}}{{page.url}}",
+        "dateCreated": "{{page.date}}",
+        "datePublished": "{{page.date}}",
+        "headline": "{{page.title}}",
+        "name": "{{page.title}}",
+        "description": "{{page.description}}",
+        "identifier": "{{page.date}} {{page.title}}",
+        {% if page.keywords or page.categories or page.tags %}
+        "keywords": [{% for keyword in page.keywords %}{% if forloop.first %}{% else %}, {% endif %}"{{keyword}}"{% endfor %}{% for keyword in page.categories %}, "{{keyword}}"{% endfor %}{% for keyword in page.tags %}, "{{keyword}}"{% endfor %}],
+        {% endif %}
+        "author":[{
+          "@type": "Person",
+          "name": "{{site.authors[page.author].name}}"
+        }],
+        "publisher": {
+          "@type": "Organization",
+          "name": "Mentro",
+          "url": "https://mentro.tech",
+          "logo":  {
+            "@type": "ImageObject",
+            "url":  "https://mentro.tech/assets/images/mentro_logo.png"
+          },
+          "description": "World's first Mentorship platform at your fingertips.Mentro, brings professional guidance from industry experts working in companies like Google, Microsoft, Amazon, Jio, Flipkart, GoJek, CRED and more at a personalised level for you."
+        },
+        "mainEntityOfPage": "{{site.url}}",
+        "isAccessibleForFree": "True"
+    }
+    </script>
+    {% endif %}

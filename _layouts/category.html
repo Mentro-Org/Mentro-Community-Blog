@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-12">
+        <h1 class="font-weight-bold title h3 text-uppercase mb-6">{{page.title}}</h1>
+        
+        {% assign posts = site.posts | where:"category", page.category %}
+        {% for post in posts %}
+        {% include main-loop-card.html %}
+        {% endfor %}
+        </div>
+    </div>
+</div>

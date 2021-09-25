@@ -1,4 +1,6 @@
-# Mentro-Community-Blog
+# Mentro-Community-Blog 
+
+http://community.blog.mentro.tech
 
 <h2 align="center">We are excited to be a part of :point_down:</h2>
 
@@ -54,16 +56,10 @@
 ```
 git clone https://github.com/<GITHUB_USERNAME>/Mentro-Community-Website.git 
 ```
-3. Go into the directory containing the project
+3. Go into the directory containing the project, and get started
 
-5. Install all dependencies
-```
-npm install
-```
-5. Start the development server
-```
-npm run start
-```
+4. To know more about the setup and how to contribute visit [here](/contributing.md) 
+
 
 ## How to make a pull request? 	:man_technologist:
 
@@ -105,5 +101,4 @@ Hurray! You have successfully made a contribution! :partying_face:🎉
 
 - If you have a general question about a project or repository or about mentro, submit a message to the relevant channel on mentro's discord: https://discord.gg/nEmAFyFv
 - If you have other questions, please write us at 	:e-mail: contact@mentro.tech
-
 

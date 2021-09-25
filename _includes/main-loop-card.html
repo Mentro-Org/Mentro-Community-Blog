@@ -1,0 +1,25 @@
+<div class="mb-5 d-flex justify-content-between main-loop-card">
+<div class="pr-2" style="width: 100%">
+	<h2 class="mb-1 h5 font-weight-bold">
+	<a class="text-dark" href="{{post.url}}">{{ post.title }}</a>
+	</h2>
+	<p class="excerpt">
+	   {{ post.excerpt  | strip_html | strip_newlines | truncate: 120}}
+	</p>
+	<small class="d-block text-muted">
+		In <span class="catlist">
+		<a class="text-capitalize text-muted smoothscroll" href="/{{ post.category | downcase }}">{{ post.category }}</a><span class="sep">, </span>
+		</span>
+	</small>
+	<small class="text-muted">
+		{{ post.date | date: '%b %d, %Y' }}
+	</small>
+</div>
+{% if post.image %}
+	<div class="col-md-3 pr-0 text-right" style="display:flex;align-items: center;justify-content: center;">
+	<a href="{{post.url}}">
+	<img class="w-100" src="{{ post.image }}" alt="{{ post.title }}">
+	</a>
+	</div>
+{% endif %}
+</div>

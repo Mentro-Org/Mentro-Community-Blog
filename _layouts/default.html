@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{site.name}} | {{page.title}}</title>
+
+{% include seo.html %}
+
+    <link rel="shortcut icon" type="image/x-icon" href="{{site.favicon}}">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700" rel="stylesheet">
+
+    <!-- Bootstrap Modified -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <!-- Theme Stylesheet -->
+    <link rel="stylesheet" href="/assets/css/theme.css">
+    
+    {% if page.url == "/" %}
+
+    <script type="application/ld+json">{
+        "@context": "http://schema.org",
+        "@type": "WebPage",
+        "image": ["https://blog.mentro.tech/assets/images/mentro_logo.png"],
+        "url": "https://blog.mentro.tech",
+        "dateCreated": "2021",
+        "headline": "Mentro.Tech Blog",
+        "name": "Mentro.Tech Blog",
+        "description": "World's first Mentorship platform at your fingertips.Mentro, brings professional guidance from industry experts working in companies like Google, Microsoft, Amazon, Jio, Flipkart, GoJek, CRED and more at a personalised level for you.",
+        "identifier": "https://blog.mentro.tech",
+        "keywords": ["Mentro Blog", "Blog Mentro", "Mentorship blog"],
+        "publisher": {
+                "@type": "SoftwareApplication",
+                "name": "Mentro",
+                "image": {
+                "@type": "ImageObject",
+                "url": "https://blog.mentro.tech/assets/images/mentro_logo.png"
+                },
+                "url": "https://mentro.tech/",
+                "operatingSystem": "All",
+                "applicationCategory": "Education",
+                "description": "World's first Mentorship platform at your fingertips.Mentro, brings professional guidance from industry experts working in companies like Google, Microsoft, Amazon, Jio, Flipkart, GoJek, CRED and more at a personalised level for you."
+            }
+        },
+        "mainEntityOfPage": "https://blog.mentro.tech",
+        "isAccessibleForFree": "True"
+    }
+    </script>
+    {% endif %}
+
+    <!-- Jquery on header to make sure everything works, the rest  of the scripts in footer for fast loading -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+    {% include tracking-header.html %}
+
+
+</head>
+
+<body id ="body" class="{% if page.url == "/" %} homefirstpage {% endif %} ">
+
+    <!-- Navbar -->
+    <nav id="MagicMenu" class="topnav navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="/index.html"><img src="{{ site.logo }}" alt="Anc Logo" style="height: 3rem;"></a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarColor02" >
+            <ul class="navbar-nav mr-auto d-flex align-items-center">
+               {% include menu-header.html %}
+            </ul>
+        </div>
+        <!-- <label id="themeSwitch" class="switch">
+            <input type="checkbox" onclick="Theme()"/>
+            <span class="slider"></span>
+        </label> -->         
+    </div>
+    </nav>
+
+    <!-- Search Results -->
+    <div id="lunrsearchresults">
+        <ul class="mb-0"></ul>
+    </div>
+
+    <!-- Content -->
+    <main role="main" class="site-content">
+        {{ content }}
+    </main>
+
+
+    <!-- Scripts: popper, bootstrap, theme, lunr -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="/assets/js/theme.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    
+
+
+    <!-- Footer -->
+    <footer class="bg-white border-top p-3 text-muted small">
+        <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div style="margin-left:40%">
+
+                <span id="copyright"></span>
+
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    {% include tracking-footer.html %}
+
+</body>
+<script>
+    document.getElementById("copyright").innerHTML =  "@" + (new Date().getFullYear()) + " Mentro"
+    if (localStorage.getItem("theme") === null) {
+        localStorage.setItem("theme", 0);
+    }
+    else if (localStorage.getItem("theme") == 0) { 
+        body.classList.remove("dark");
+    } 
+    else if(localStorage.getItem("theme") == 1){
+        body.classList.add("dark");
+    }
+    function Theme() {
+        var body = document.getElementById("body");
+        if (localStorage.getItem("theme") == 0) { 
+            body.classList.add("dark");
+            localStorage.setItem("theme", 1);
+        } 
+        else if(localStorage.getItem("theme") == 1){
+            body.classList.remove("dark");
+            localStorage.setItem("theme", 0);
+        } 
+    }
+</script> 
+</html>
