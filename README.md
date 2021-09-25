@@ -33,7 +33,7 @@
 :memo: Community Blog website is for contributors to get a glimpse of mentro. The website also includes blogs and guides by the mentrozens to help you better understand our work and learn from others experience. 
 
 [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/Mentro-Community-Blog)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat&logo=git)](https://github.com/Mentro-Org/Mentro-Community-Blog) 
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-red.svg?style=flat&logo=git)](https://github.com/Mentro-Org/Mentro-Community-Blog) 
 
 ## Table Of Contents:
 
