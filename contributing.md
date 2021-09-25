@@ -23,112 +23,90 @@ http://community.blog.mentro.tech
 
 ## Editting
 
-Run the Server and go to the following URL
-
-> http://127.0.0.1:4000/admin
-
-<center>
-<img src="Help/admin.png" alt="admin Page" style:"width: 100vw"/>
-</center>
-
-Will be displayed
-
 **_Remember Restarting the Server After Updating the Config_**
-
-### Editting Site Configs
-
-- **Click on Configuration**
-
-<center>
-<img src="Help/siteConfigs.png" alt="Site Configs Page" style:"width: 100vw"/>
-</center>
-
-- **Change the Configs in the Highlighted Portion**
-
-  - logo_b - refers to logo for the dark theme.
-  - logo_w - refers to logo for the light theme.
-  - favicon - refers to the favicon.
-  - email - should be contact eamil.
-
-- **Remember Restarting the Server After Updating the Config**
 
 ### Adding Authors
 
-- **Click on Configuration**
-
-<center>
-<img src="Help/addAuthor.png" alt="Add Author" style:"width: 100vw"/>
-</center>
-
-- **Copy an Author Layout and paste it under the author as given in the image**
-
+- update authors section of `_config.yml` 
+- Put the following required info under an author_id(anything of your choice): 
   - name - name of author.
   - site - some site if the author has some.
   - avatar - relative an image from the assets/images directory.
   - bio - A short bio.
   - email - A contact email specific to the author
-
-- **Remember Restarting the Server After Updating the Config**
+  - linkedin - linkedin account url
+  - twitter - twitter account url
+**Sample**
+```
+  mentro:
+    name: "Team Mentro" # Author ID
+    site: "https://mentro.tech"
+    avatar: "/assets/images/mentro_logo.png"
+    bio: "Official account for Mentro"
+    email: "contact@mentro.tech"
+    linkedin: https://www.linkedin.com/company/mentro-official
+```
+- add a `<authorID>.md` page in _authors folder with the following: 
+  - author: mentro # Author ID
+  - permalink: /author/debayan/ # `/author/<AuthorID>`
+- Remember Restarting the Server After Updating the Config
 
 ### Adding Posts
 
-- **Click on Posts**
+- Create a md file in the format `<yyyy-mm-dd-your-unique-postname>.md` in the _posts folder
+- write your blog in markdown, might contain any of the markdown features like lists, urls, embedded images, etc
+- Add the following metadata:
+``` 
+---- 
+  title:  "Title of Your Post"
+  description:  "Description of your post"
+  category: leetcode # category can be one of **backend**, **frontend**, **dsa**, **leetcode**
+  image: /assets/images/image.jpg # image url of your post
+  keywords: # Keywords your want to ad for SEO
+    - Mentor 
+    - Mentro
+    - Mentorship
+  author: authorId 
+  permalink: /leetcode/:title/ # /<category>/:title/
+  tags: # Tags if you want some like `dp`, `tree`, `js`, `django`
+    - tree
+    - python
+----
+```
+- Visit [here](/Help/2021-08-18-find-a-mentor-today-b1.md) to see sample markdown
 
-<center>
-<img src="Help/writingPosts.png" alt="Add Posts" style:"width: 100vw"/>
-</center>
 
-- **Add Title to the Post**
-
-- **In the body section Create a post using Markdown**
-
-<center>
-<img src="Help/addingMetadata.png" alt="Add Metadata" style:"width: 100vw"/>
-</center>
-
-- **Below the post there is a add metadata portion. Add Metadata there**
-
-  - **layout** - post
-  - **author** - The sub fileld under author that resembles you
-  - **categories** - Enter the categories under which your post matches
-  - **image** - relative URL to the image that forms the main image of the post. The URL must be a relative url from assets/image
-  - **tags** - The tags under which the post will be visible
-
-- **Don't Forget to click on save**
 
 ### Adding/Removing images
 
-- **Click on Static Files**
-- **Select Assets then images the ngo to the directory where you want to upload**
-- **Click on the Upload files button to Upload an image**
-- **Hover on any image to see the X ,clicking on which deletes an image.**
+- add images to the /assets/images folder if you want to add some
 
 ## Understanding the File Structure
 
 ### \_includes
 
-This mostly contains files which are related to UI and is not of much importance if you don't want to make major UI changes.
+This mostly contains files which are related to UI.
 
 ### \_layouts
 
-1. default.html - This is the layout loaded by all pages It contains the Navbar and the basic structure of the web pages
-2. page.html - This is the layout for the contents of **\_pages** folder. Each page mentioned here holds the details of each author and their post history
-3. page-sidebar.html - This is the layout for the contents of **\_pages** too.
-4. post.html - This is the layout the **\_posts** in the blog.
+1. author.html - This is the layout for author pages. This affects pages in **\_authors**.
+2. category.html - This is the layout for category pages. This affects pages in **\_categories**
+3. default.html - This is the layout loaded by all pages It contains the Navbar and the basic structure of the web pages
+4. page.html - This is the layout for the contents of **\_pages** folder. Each page mentioned here holds the details of each author and their post history
+5. page-sidebar.html - This is the layout for the sidebar used in many pages.
+6. post.html - This is the layout the **\_posts** in the blog.
 
 ### \_pages
 
-1. about.md - This is the abouts page
-2. author-jane.html, author-sal.html, .. - These are individual pages for each author
-3. author-list - This page displays the list of authors
-4. categories.html - this displays the categories of all blogs present Ex. Tutorial, Announcement etc
-5. contact.md - It is the contacts page
-6. privacy-policy.md - These are the Company's Privacy Policies
-7. tags.html - These are tags to each blogs or Categories
+
+1. contact.md - It is the contacts page
+2. privacy-policy.md - These are the Privacy Policies
+3. tags.html - These are tags to each blogs
 
 ### \_site
 
-This folder is constantly updated and consists of the compiled version of HTML CSS and other Resources
+This folder is constantly updated and consists of the compiled version of HTML CSS and other Resources. 
+**Warning: Don't edit contents of the folder.**
 
 ### assets
 
@@ -142,12 +120,3 @@ This consists of some site variables like links to (logos, baseurl, sitename etc
 ### index.html
 
 This is the home page of the repository
-
-## General Tips
-
-1. Make Sure You are mot making any changes in the \_site folder, as the site folder is generated automatically bases on the other folders. Hence all the changes made will be lost with just a server restart.
-
-2. Make sure you provide relative urls to every variable. The URL bust be relative to the base url.
-
-3. If you want to change some color shade or highlight for all buttons(According to the themes) please consider copying the HEX code of the color, then find-replace all occourances of the color with the required change in both **theme.css** and **main.css**
- 
