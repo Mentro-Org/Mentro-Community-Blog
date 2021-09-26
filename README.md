@@ -47,13 +47,13 @@ https://community.blog.mentro.tech
 
 - [Ask Your Doubts](https://discord.gg/nEmAFyFv) 💬
 
-- [Share on Twitter after your PR has been merged into the repo as we believe in learning in public] 📣
+- Share on Twitter, LinkedIn after your PR has been merged into the repo as we believe in learning in public & you can tag us using #mentro #mentrozens📣
 
-- [Find your mentor] 🤝
+- [Find your mentor](https://play.google.com/store/apps/details?id=com.mentro.mentro_app)🤝
 
 - [Add beginner-friendly issues](#contributing) 🙏
 
-- [Add blog] 📖
+- [Add blog](https://community.blog.mentro.tech/) 📖
 
 Let's help each other to complete the [Hacktoberfest](https://hacktoberfest.digitalocean.com/) challenge! 🚀 
 May the open-source be with you🎉🎉
