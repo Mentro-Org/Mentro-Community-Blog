@@ -47,7 +47,7 @@ https://community.blog.mentro.tech
 
 - [Ask Your Doubts](https://discord.gg/nEmAFyFv) 💬
 
-- Share on Twitter, LinkedIn after your PR has been merged into the repo as we believe in learning in public & you can tag us using #mentro #mentrozens📣
+- Share on [Twitter](https://twitter.com/MentroOfficial), [LinkedIn](https://www.linkedin.com/company/mentro-official/) after your PR has been merged into the repo as we believe in learning in public & you can tag us using #mentro #mentrozens📣
 
 - [Find your mentor](https://play.google.com/store/apps/details?id=com.mentro.mentro_app)🤝
 
@@ -56,18 +56,11 @@ https://community.blog.mentro.tech
 - [Add blog](https://community.blog.mentro.tech/) 📖
 
 Let's help each other to complete the [Hacktoberfest](https://hacktoberfest.digitalocean.com/) challenge! 🚀 
+
 May the open-source be with you🎉🎉
-
-## Table Of Contents:
-
-* [What is Mentro](#what--is--mentro)
-* [Contributing Guidelines](#how--to--contribute)
-* [Make a PR](#how--to--make--a--pullrequest)
-
 
 ## :writing_hand: What is Mentro?
 [Mentro](https://mentro.tech/app) is a mentorship platform which connects you with mentors from great startups & companies like Microsoft, Cred, Zomato, Google, Amazon, Jio, Flipkart, Gojek, Goldman Sachs & many more. 
-
 
 ## How to Contribute? :point_down:
 
