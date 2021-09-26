@@ -26,16 +26,35 @@ https://community.blog.mentro.tech
 [![GitHub stars](https://img.shields.io/github/stars/Mentro-Org/Mentro-Community-Website?color=%2354d747)](https://github.com/Mentro-Org/Mentro-Community-Website/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/Mentro-Org/Mentro-Community-Website?color=%2354d747&logo=Github&logoColor=%2354d747)](https://github.com/Mentro-Org/Mentro-Community-Website/network) -->
 
-:point_right: We have created a curated list of issues for you to get started with
+:memo: Community Blog website is for contributors to get a glimpse of mentro. The website also includes blogs and guides by the mentrozens to help you better understand our work and learn from others experience. 
+
+:point_right: If you are a begineer to open-source, then this is a one-stop place for you to contribute to issues with the tag **HacktoberFest** and you can also explore, connect with the mentors at Mentro. So, what are you waiting for?🎉
+
+:point_right: Here's where you may post your questions and look for potential issues to contribute. We've put up a list of **beginner-friendly issues** ahead so you can get started as soon as Hacktoberfest begins! 🚀 
 
 :point_right: Feel free to drop your questions on [discord](https://discord.gg/nEmAFyFv)
 
 :heavy_check_mark: Make sure you have downloaded Mentro's Android [App](https://play.google.com/store/apps/details?id=com.mentro.mentro_app)
 
-:memo: Community Blog website is for contributors to get a glimpse of mentro. The website also includes blogs and guides by the mentrozens to help you better understand our work and learn from others experience. 
-
 [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/Mentro-Community-Blog)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-red.svg?style=flat&logo=git)](https://github.com/Mentro-Org/Mentro-Community-Blog) 
+
+## Ace the HacktoberFest like a pro⭐:point_down:
+
+- [Merge Your First PR](#your-first-pr) 🔥
+
+- [Ask Your Doubts](https://discord.gg/nEmAFyFv) 💬
+
+- [Share on Twitter after your PR has been merged into the repo as we believe in learning in public] 📣
+
+- [Find your mentor] 🤝
+
+- [Add beginner-friendly issues](#contributing) 🙏
+
+- [Add blog] 📖
+
+Let's help each other to complete the [Hacktoberfest](https://hacktoberfest.digitalocean.com/) challenge! 🚀 
+May the open-source be with you🎉🎉
 
 ## Table Of Contents:
 
