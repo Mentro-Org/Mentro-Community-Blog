@@ -10,7 +10,7 @@ https://community.blog.mentro.tech
     </a>
 </p>
 
-<h1 align="center"> <a href="https://github.com/Mentro-Org/Mentro-Community-Blog/">HacktoberFest 2021</a></h1>
+<h1 align="center"> <a href="https://hacktoberfest.digitalocean.com">HacktoberFest 2021</a></h1>
 
 <p align="center">
  <img alt="Discord" src="https://img.shields.io/discord/861211593580085278?label=Join%20Discord">" 
