@@ -43,6 +43,8 @@ https://community.blog.mentro.tech
 
 ## Ace the HacktoberFest like a pro⭐:point_down:
 
+- Register yourself through this [form](https://forms.gle/YTQLLWAfaGUfRRUHA)
+
 - [Merge Your First PR](#your-first-pr) 🔥
 
 - [Ask Your Doubts](https://discord.gg/nEmAFyFv) 💬
