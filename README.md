@@ -13,7 +13,7 @@ https://community.blog.mentro.tech
 <h1 align="center"> <a href="https://hacktoberfest.digitalocean.com">HacktoberFest 2021</a></h1>
 
 <p align="center">
- <img alt="Discord" src="https://img.shields.io/discord/861211593580085278?label=Join%20Discord">" 
+ <img alt="Discord" src="https://img.shields.io/discord/861211593580085278?label=Join%20Discord"> 
   <img src="https://img.shields.io/github/contributors/Mentro-Org/Mentro-Community-Website?color=yellow&logo=Github&logoColor=yellow" >
   
   <img src="https://img.shields.io/github/stars/Mentro-Org/Mentro-Community-Website?color=%2354d747)](https://github.com/Mentro-Org/Mentro-Community-Website/stargazers" >
