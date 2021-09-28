@@ -32,7 +32,7 @@ https://community.blog.mentro.tech
 
 :point_right: Here's where you may post your questions and look for potential issues to contribute. We've put up a list of **beginner-friendly issues** ahead so you can get started as soon as Hacktoberfest begins! 🚀 
 
-:point_right: Feel free to drop your questions on [discord](https://discord.gg/nEmAFyFv)
+:point_right: Feel free to drop your questions on [discord](https://discord.gg/93vAUe3sdg)
 
 :heavy_check_mark: Make sure you have downloaded Mentro's Android [App](https://play.google.com/store/apps/details?id=com.mentro.mentro_app)
 
@@ -47,7 +47,7 @@ https://community.blog.mentro.tech
 
 - [Merge Your First PR](#your-first-pr) 🔥
 
-- [Ask Your Doubts](https://discord.gg/nEmAFyFv) 💬
+- [Ask Your Doubts](https://discord.gg/93vAUe3sdg) 💬
 
 - Share on [Twitter](https://twitter.com/MentroOfficial), [LinkedIn](https://www.linkedin.com/company/mentro-official/) after your PR has been merged into the repo as we believe in learning in public & you can tag us using #mentro #mentrozens📣
 
@@ -115,6 +115,6 @@ Hurray! You have successfully made a contribution! :partying_face:🎉
 
 ## :speech_balloon: FAQ and Other Questions 
 
-- If you have a general question about a project or repository or about mentro, submit a message to the relevant channel on mentro's discord: https://discord.gg/nEmAFyFv
+- If you have a general question about a project or repository or about mentro, submit a message to the relevant channel on mentro's discord: https://discord.gg/93vAUe3sdg
 - If you have other questions, please write us at 	:e-mail: contact@mentro.tech
 
