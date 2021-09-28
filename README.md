@@ -109,7 +109,7 @@ git clone https://github.com/<GITHUB_USERNAME>/Mentro-Community-Website.git
 
    **Note: A pull request allows your changes to be merged with the original project.**
    
-   Wait for your changes to be merged.
+   Wait for your changes to get merged.
 
 Hurray! You have successfully made a contribution! :partying_face:🎉
 
