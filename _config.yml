@@ -36,6 +36,13 @@ authors:
     bio: "Co-founder Mentro"
     email: "debayan@mentro.tech"
     linkedin: https://www.linkedin.com/in/debayan-ganguly/
+  niyoj:
+    name: "Niyoj Oli"
+    site: "https://niyojoli.com.np"
+    avatar: "/assets/images/author/niyoj.jpg"
+    bio: "Open source contributor"
+    email: "oliniyoj@gmail.com"
+    linkedin: https://www.linkedin.com/in/niyoj
 
 
 # Defaults
