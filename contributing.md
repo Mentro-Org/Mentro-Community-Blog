@@ -9,8 +9,8 @@ https://community.blog.mentro.tech
 (make sure you have the dependencies installed, like Ruby, bundle etc.)
 
 1. fork the repository
-2. git clone
-3. cd mentro-blog
+2. git clone https://github.com/<GITHUB_USERNAME>/Mentro-Community-Blog.git
+3. cd mentro-community-blog
 4. bundle exec jekyll serve
 5. go to the link _http://127.0.0.1:4000/_ in your browser
 

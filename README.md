@@ -81,7 +81,7 @@ git clone https://github.com/<GITHUB_USERNAME>/Mentro-Community-Blog.git
 
 1. After cloning the repository you can switch to the cloned repo on your local machine.
 ```
-  cd community-blog
+  cd mentro-community-blog
 ```
 2. Create a new branch.
 ```
