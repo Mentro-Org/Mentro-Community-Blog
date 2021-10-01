@@ -14,6 +14,8 @@
   src: local('Metropolis Medium'), url('/assets/fonts/Metropolis-Medium.woff') format('woff');
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 :root {
   --blue: #7832e2;
   --indigo: #502c6c;
@@ -59,7 +61,7 @@
 }
 
 html {
-  font-family: sans-serif;
+  font-family: 'Poppins', sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -86,7 +88,7 @@ section {
 
 body {
   margin: 0;
-  font-family: "Segoe UI", "Helvetica Neue", "Arial";
+  font-family: 'Poppins', sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.6;
@@ -3101,7 +3103,7 @@ fieldset:disabled a.btn {
   background-color: transparent;
 }
 .btn-outline-success:not(:disabled):not(.disabled):active,
-..btn-dark:not(:disabled):not(.disabled).active,
+.btn-dark:not(:disabled):not(.disabled).active,
 .show > .btn-outline-success.dropdown-toggle {
   color: #fff;
   background-color: #5CCB00;
