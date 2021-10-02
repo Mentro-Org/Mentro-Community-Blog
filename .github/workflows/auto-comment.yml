@@ -1,0 +1,31 @@
+name: Auto Comment
+on: [issues, pull_request]
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: wow-actions/auto-comment@v1.0.7
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          issuesOpened: >
+            Hello👋 @{{ author }}, I hope you are doing well!
+            <br>
+            Thank you for raising an issue. We will will investigate into the issue and get back to you as soon as possible.
+            Please make sure you have given us as much context as possible.
+            <br>
+            Feel free to join the community and collaborate ❤
+            <br>
+            Join our Discord Community [here](https://discord.gg/uNQ7DWhcRC)
+
+          pullRequestOpened: >
+            Hello👋 @{{ author }}, I hope you are doing well!
+            <br>
+            Thank you for raising your pull request and contributing to our Community 🎉
+
+            Before asking for a review make sure to:
+            -  Go through the [contribution guidelines](https://github.com/Mentro-Org/Mentro-Community-Blog/blob/main/contributing.md)
+            - Mention the issue for which the PR is raised to track the progress of the issue. In case an issue is not created, please create an issue for the PR.
+            <br>
+            Feel free to join the community and collaborate ❤
+            <br>
+            Join our Discord Community [here](https://discord.gg/uNQ7DWhcRC)
