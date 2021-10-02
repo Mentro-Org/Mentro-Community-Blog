@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Site
 name: "Mentro"
 mainSiteUrl: "https://mentro.tech"
@@ -89,3 +90,90 @@ exclude:
     Gruntfile.coffee,
     node_modules,
   ]
+=======
+# Site
+name: "Mentro"
+mainSiteUrl: "https://mentro.tech"
+url: "https://blog.mentro.tech"
+description: "World's first Mentorship platform at your fingertips.Mentro, brings professional guidance from industry experts working in companies like Google, Microsoft, Amazon, Jio, Flipkart, GoJek, CRED and more at a personalised level for you."
+logo: "/assets/images/mentro_logo.png"
+favicon: "/assets/images/mentro_logo.png"
+releaseDate: "2020-03"
+email: "contact@mentro.tech"
+slogan: "Easy Access to Professional Mentorship"
+twitterHandle: "@Mentro17"
+androidAppName: "Mentro - Easy Access to Professional Mentorship"
+androidAppPackage: "com.mentro.mentro_app"
+
+include: ["_pages", "_authors", "_categories"]
+permalink: /:title/
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+
+authors:
+  mentro:
+    name: "Team Mentro"
+    site: "https://mentro.tech"
+    avatar: "/assets/images/mentro_logo.png"
+    bio: "Official account for Mentro"
+    email: "contact@mentro.tech"
+    linkedin: https://www.linkedin.com/company/mentro-official
+  debayan:
+    name: "Debayan Ganguly"
+    site: "https://mentro.tech"
+    avatar: "/assets/images/author/debayan.jpg"
+    bio: "Co-founder Mentro"
+    email: "debayan@mentro.tech"
+    linkedin: https://www.linkedin.com/in/debayan-ganguly/
+
+
+# Defaults
+defaults:
+  # all posts
+  - scope:
+      path: "_posts"
+    values:
+      layout: post
+      author: mentro
+      avatar: /assets/images/mentro_logo.png
+
+  # all pages
+  - scope:
+      path: "_pages"
+    values:
+      layout: page
+
+  # all authors
+  - scope:
+      path: "_authors"
+    values:
+      layout: author
+  
+  # all categories
+  - scope:
+      path: "_categories"
+    values:
+      layout: category
+
+# Syntax
+markdown: kramdown
+highlighter: rouge
+
+# Paginate
+paginate: 10
+
+# Exclude metadata and development time dependencies (like Grunt plugins)
+exclude:
+  [
+    README.markdown,
+    package.json,
+    grunt.js,
+    Gruntfile.js,
+    Gruntfile.coffee,
+    node_modules,
+  ]
+>>>>>>> resolved merge conflicts
