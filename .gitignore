@@ -6,6 +6,8 @@ node_modules/
 .firebase*
 firebase*
 
+Gemfile.lock
+
 venv/
 clouddockerbuild.yaml
 **/*.pyc
