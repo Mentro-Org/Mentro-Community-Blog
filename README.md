@@ -70,7 +70,7 @@ May the open-source be with you🎉🎉
 
 3. Clone the repository  
 ```
-git clone https://github.com/<GITHUB_USERNAME>/Mentro-Community-Website.git 
+git clone https://github.com/<GITHUB_USERNAME>/Mentro-Community-Blog.git 
 ```
 3. Go into the directory containing the project, and get started
 
@@ -81,7 +81,7 @@ git clone https://github.com/<GITHUB_USERNAME>/Mentro-Community-Website.git
 
 1. After cloning the repository you can switch to the cloned repo on your local machine.
 ```
-  cd community-website
+  cd mentro-community-blog
 ```
 2. Create a new branch.
 ```
