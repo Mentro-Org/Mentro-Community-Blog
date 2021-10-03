@@ -1,12 +1,12 @@
 ---
-title: "Get Started with APIs"
+title: "Getting started with API's"
 description: "After reading  this blog post you will get to know what, why and how about APIs and for sure you will feel confident about this topic "
-category: Application Development
+category: Backend
 image: /assets/images/categories/APIs.jpg
 keywords: 
     - Mentro
     - APIs
-    - Get Started with APIs
+    - Getting started with API's
     - Application Programming Interface
 author: itsdharmxd
 permalink: /backend/:title/
@@ -27,7 +27,7 @@ You go to a large library and are looking for ‘ The Da Vinci Code ’ by Dan B
 
 ![](https://www.detroitlabs.com/wp-content/uploads/2018/02/alfons-morales-YLSwjSy7stw-unsplash-1536x901.jpg)
 
-# In This analogy
+# In This Analogy
 
  + the library is the  database — one of the systems involved 
 + the books are the data
@@ -46,7 +46,10 @@ APIs, or application program interfaces, are vital tools for businesses in all i
 ![](https://media.geeksforgeeks.org/wp-content/uploads/20200517143318/WebAPI.jpg)
 
 The main reason that APIs matter so much in modern markets is that they allow for faster innovation. Barriers to change are reduced and more people can contribute to an organization’s success. They offer two-fold benefits: the company can create better products while standing out from the competition. APIs also make monetization easier. 
+
 ## Types of API protocols
+
+
 As the use of web APIs has increased, certain protocols have been developed to provide users with a set of defined rules that specifies the accepted data types and commands. In effect, these API protocols facilitate standardized information exchange:
 
 + SOAP (Simple Object Access Protocol) is an API protocol built with XML, enabling users to send and receive data through SMTP and HTTP. With SOAP APIs, it is easier to share information between apps or software components that are running in different environments or written in different languages.
