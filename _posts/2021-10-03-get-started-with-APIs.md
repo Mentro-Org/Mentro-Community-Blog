@@ -46,7 +46,8 @@ APIs, or application program interfaces, are vital tools for businesses in all i
 ![](https://media.geeksforgeeks.org/wp-content/uploads/20200517143318/WebAPI.jpg)
 
 The main reason that APIs matter so much in modern markets is that they allow for faster innovation. Barriers to change are reduced and more people can contribute to an organization’s success. They offer two-fold benefits: the company can create better products while standing out from the competition. APIs also make monetization easier. 
-
+\
+&nbsp;
 ## Types of API protocols
 
 
