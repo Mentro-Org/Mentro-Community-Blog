@@ -43,6 +43,12 @@ authors:
     bio: "Open Source Contributor"
     email: "oliniyoj@gmail.com"
     linkedin: https://www.linkedin.com/in/niyoj/
+  itsdharmxd:
+    name: "Dharmesh Upadhyay"
+    avatar: "/assets/images/author/itsdharmxd.jpg"
+    bio: "Open Source Contributor"
+    email: "dharmeshupadhyay.uemk@gmail.com"
+    linkedin: https://www.linkedin.com/in/dharmeshupadhyayuemk/  
 
 # Defaults
 defaults:
