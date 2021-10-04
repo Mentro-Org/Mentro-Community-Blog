@@ -15,17 +15,14 @@
 ----
 
 ## Insertion Sort
-```
 Insertion sort is a simple sorting algorithm. Here, the list of elements is virtually divided into sorted and unsorted parts. Element from unsorted side is taken and placed in the appropriate position in sorted side of the list.
-```
+
 
 ## Algorithm
-```
 1. Assume the first element to be already sorted.
 2. Pick the next element from unsorted array and compare it with the elements from sorted array.
 3. Shift the greater elements towards the right and insert the picked element in the appropriate position in sorted array.
 4. Repeat the process until the array is completely sorted.
-```
 
 ## Working of Insertion sort
 ```
@@ -68,7 +65,7 @@ void insertionSort(int arr[], int n)
     value = arr[i];
     j = i - 1;
  
-    //Shifting elements of sorted array, which are greater than value, towards right.
+    //Shifting elements of sorted array, which are greater than value towards right.
     while (j >= 0 && arr[j] > value)
     {
       arr[j + 1] = arr[j];
@@ -103,6 +100,21 @@ int main()
   return 0;
 }
 ```
+
+## Time Complexity
+The worst case time complexity of Insertion sort is O(n^2). 
+The average case time complexity of Insertion sort is O(n^2)
+The best case time complexity of Insertion sort is O(n).
+Insertion sort takes minimum timw when the arrray is already sorted.
+
+## Sorting In Place
+Insertion sort places the element from unsorted list to sorted list. It does not take extra space to sort the elements. So here, sorting is done in place.
+
+## Stable
+Yes, Insertion sort is stable.
+
+## Auxiliary Space
+The extra space required by the insertion sort is constant i.e., O(1).
 
 
 
