@@ -43,6 +43,13 @@ authors:
     bio: "Open Source Contributor"
     email: "oliniyoj@gmail.com"
     linkedin: https://www.linkedin.com/in/niyoj/
+  sayanta:
+    name: "Sayanta Bhattacharjee"
+    site: "https://mentro.tech"
+    avatar: "/assets/images/author/sayanta.jpg"
+    bio: "Co-founder Mentro"
+    email: "sayanta2702@gmail.com"
+    linkedin: https://www.linkedin.com/in/sayanta-bhattacharjee-752432130/
 
 # Defaults
 defaults:
