@@ -64,8 +64,8 @@ As the use of web APIs has increased, certain protocols have been developed to p
 
 
 
-
-
-
-
+\
+&nbsp;
+## Conclusion
+The role of APIs is considerable if we look at them not only from the software development point of view but also from the business collaboration. These machine-readable interfaces for resource exchange are like delivery services that work under the hood and enable technological connectivity and make services communicate.
 
