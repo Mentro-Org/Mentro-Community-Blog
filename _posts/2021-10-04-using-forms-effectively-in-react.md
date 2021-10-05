@@ -57,13 +57,32 @@ The key here is to avoid controlled components, and rather do everything on the 
 Here is an example for the same
 
 ```
+    const handleSubmit=(e)=>{
+        const email = target.email.value;
+        const password = target.password.value;
+        const form = new FormData()
+        form.append("email",email)
+        form.append("password",password)
+        //
+        Can check for validation here
+        Move forward if validations pass
+        // Call api here 
+        axios({
+          method: "post",
+          url: "myurl",
+          data: form,
+          headers: { "Content-Type": "multipart/form-data" },
+        })
+    }
     return(
         <form>
             <input name="email" value={state.email}>
             <input name="password" value={state.password}>
+            <button onClick={handleSubmit}>Submit</button>
         </form>
     )
 ```
+Here we make use of FormData method. FormData converts the given input into key value pairs so that they can be sent as multipart data. This method can be utilized to input images and other files along with text inputs.
 
 ## Conclusion
 Thus we learnt how we can handle large or small forms without controlling it on user input, and with a slight touch of vanilla JS to make life easier. 
