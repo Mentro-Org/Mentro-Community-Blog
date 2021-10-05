@@ -1,0 +1,133 @@
+title: "Counting Sort- A Sorting Algorithm"
+description:" The blog post is about Counting Sort Algorithm.Here we will learn more about counting sort, how it works, its pseudocode, its implementation(C++) and some of the major characteristics."
+category:"dsa"
+keywords:
+       - Mentro
+       - Counting Sort 
+       - Sorting Algorithm
+author: Maitryee Choudhary
+tags:
+      - sorting algorithm
+      - dsa
+      - counting sort
+      
+## Introduction
+As the name counting sort, suggests the sorting algorithm which is based on the counting the occurences of unique elements present in the array. This algorithm is efficient for sorting the elements within a specific range.
+
+## Working of Counting Sort
+Consider the following input array that has to be sorted.
+A = {4,8,5,6,8,8,7,1,5,4,6,1}
+
+All the elements in the array are in the range of 0 to 8(inclusive)
+Here range = 8(range is the maximum element in the array)
+
+Step 1: Create the auxilliary array, say count of length range+1, which will be used to store the frequency(count) of distinct elements and initilalize the count array with zero.
+count = {0,0,0,0,0,0,0,0,0}
+         0 1 2 3 4 5 6 7 8 ->index
+         
+ Step 2: Store the frequency of element at their respective index in count array.
+ Example: In the above array 'A', the count of element of 8 is 3, so the value 3 will be stored at index 8 in the count array. Similarly, the count of element 7 is 1, so the value 1 will be stored at index 7. 
+ Now in this case, element 2 is not present in input array, so at index 2 of count array the value will be zero.
+ After calculating the count of elements the count array would be:
+ count = {0,2,0,0,2,2,2,1,3}
+          0 1 2 3 4 5 6 7 8
+          
+  Step 3: Calculate the cumulative sum of count array such that element at each index stores the previous sum counts.This will help to place the element at correct index in the sorted array.
+  After calculating the cumulative sum,
+  count = {0,2,2,2,4,6,8,9,12}
+           0 1 2 3 4 5 6 7 8
+           
+ Step 4: Iterate through the input array and place the element at index count[element]-1 in the output array. After placing the element decrease the count by 1.
+ Example: Consider the first element of input array 4, the value at count[4]=4. The element will be placed at index 4-1=3 of output array.
+ array A = {4,8,5,6,8,8,7,1,5,4,6,1}
+            |________
+ count =   {0,2,2,2,4,6,8,9,12}
+            0 1 2 3 4 5 6 7 8
+ Decrease the count[4] by 1
+ count  = {0,2,2,2,3,6,8,9,12}
+ In the similar manner, the next element of input array is 8. The element 8 will be placed at count[8]-1 = 11. Afterwards the count[8] will decrease by 1.
+ 
+ The ouput array would be after performing all the above steps:
+ output = {1,1,4,4,5,5,6,6,7,8,8,8}
+           0 1 2 3 4 5 6 7 8 9 10 11
+           
+  ## PseudoCode:
+  countingsort(arr,size)
+  {
+    range = max_element in the array
+    initialize the count array with zero
+    for i->0 to size
+        find the count of element at store it in count array
+    for i-> 1 to range
+        calculate the cumulative sum of count array
+    for i-> 0 to size
+        idx = count[arr[i]]-1
+        output[idx] = arr[i]
+        count[arr[i]] = count[arr[i]]-1
+  }
+  
+  ## Implementation in C++
+  #include<bits/stdc++.h>
+  using namespace std;
+  
+  
+  void countsort(int arr[], int size)
+  {
+    int max_element = arr[0];
+    /* calculating the range of count array*/
+    for(int i=1;i<size;i++)
+    {
+      if(max_element < arr[i] )
+         max_element = arr[i];
+    }
+    int range = max_element+1;  
+    int output[range];
+    int count[range];
+    
+    /*initializing the count array with zero*/
+    for(int i=0;i<range;i++)
+        count[i]=0;
+        
+    /*calculating the count of elements*/
+    for(int i=0;i<size;i++)
+    {
+      count[arr[i]] = count[arr[i]] + 1;
+    }
+    
+    /*calculating the cumulative sum*/
+    for(int i=1;i<range;i++)
+      count[i] = count[i-1] + count[i];
+      
+     /* finding the index of each element*/
+     for(int i=0;i<size;i++)
+     {
+        int idx = count[arr[i]]-1;
+        output[idx] = arr[i];
+        count[arr[i]] -= 1;
+     }
+     
+     /*printing the sorted array*/
+     for(int i=0;i<range;i++)
+       cout<<output[i]<<" ";
+       
+ }
+  int main()
+  {
+     int array[] = {4,8,5,6,8,8,7,1,5,4,6,1};
+     int size = sizeof(array)/sizeof(int);
+     countsort(array,size);
+     return 0;
+  }
+    
+ Time Complexity: O(n+k) where n is the size of input array and k is the range of input
+ Space Complexity:O(n+k)
+ 
+ ## Advantages
+ It is quite fast.
+ It is stable algorithm
+ 
+ ## Disadvantages
+ It is not suitable for large datasets.
+ 
+ 
+ 
