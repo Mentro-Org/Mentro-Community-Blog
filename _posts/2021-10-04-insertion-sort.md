@@ -3,7 +3,7 @@
   description:  "Insertion sort is a simple sorting technique. Here in this post, first we will see the algorithm, then we will see an example of its working, we will also have a look on its implementation in C++ language, then in the last we will discuss its other characteristics."
   category: dsa
   image: /assets/images/categories/algorithm.jpg
-  keywords: # Keywords your want to ad for SEO
+  keywords:
     - Mentor 
     - Mentro
     - Mentorship
@@ -14,17 +14,22 @@
     - dsa
 ----
 
+
 ## Insertion Sort
+
 Insertion sort is a simple sorting algorithm. Here, the list of elements is virtually divided into sorted and unsorted parts. Element from unsorted side is taken and placed in the appropriate position in sorted side of the list.
 
 
 ## Algorithm
+
 1. Assume the first element to be already sorted.
 2. Pick the next element from unsorted array and compare it with the elements from sorted array.
 3. Shift the greater elements towards the right and insert the picked element in the appropriate position in sorted array.
 4. Repeat the process until the array is completely sorted.
 
+
 ## Working of Insertion sort
+
 ```
 Let's take an example of unsorted array:
 Array = {12, 32, 29, 9, 34, 21, 46, 50}
@@ -52,7 +57,9 @@ Array = {9, 12, 29, 32, 34, 21, 46, 50}
 //Now we have 9, 12 and 29 in sorted array. This process will be continued until all the elements get sorted.
 ```
 
+
 ## Implementation of Insertion sort in C++.
+
 ```
 #include <iostream>
 using namespace std;
@@ -101,19 +108,27 @@ int main()
 }
 ```
 
+
 ## Time Complexity
+
 The worst case time complexity of Insertion sort is O(n^2). 
 The average case time complexity of Insertion sort is O(n^2)
 The best case time complexity of Insertion sort is O(n).
-Insertion sort takes minimum timw when the arrray is already sorted.
+Insertion sort takes minimum time when the array is already sorted.
+
 
 ## Sorting In Place
+
 Insertion sort places the element from unsorted list to sorted list. It does not take extra space to sort the elements. So here, sorting is done in place.
 
+
 ## Stable
+
 Yes, Insertion sort is stable.
 
+
 ## Auxiliary Space
+
 The extra space required by the insertion sort is constant i.e., O(1).
 
 
