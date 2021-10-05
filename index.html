@@ -139,7 +139,8 @@ pagination:
                     </p>
                     <div href="{{post.url}}" class="btn btn-outline-success">Read More</div>
                 </div>
-                <div class="col-md-6 pr-lg-6 d-none d-md-block pr-0 rounded" style="background-image:url({{ post.image }}); background-size: contain;background-repeat: no-repeat;background-position: center;">	
+                <div class="col-md-6 pr-lg-6 d-none d-md-block pr-0 rounded p-4">	
+                    <img style="height: 14rem" src="{{ post.image }}" alt="{{ post.title }}">
                 </div>
             </div>
         </div>
