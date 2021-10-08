@@ -5,12 +5,12 @@ keywords:
        - Mentro
        - Counting Sort 
        - Sorting Algorithm
-author: Maitryee Choudhary
+author: Maitryee-Choudhary
 tags:
       - sorting algorithm
       - dsa
       - counting sort
-      
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------      
 ## Introduction
 As the name counting sort, suggests the sorting algorithm which is based on the counting the occurences of unique elements present in the array. This algorithm is efficient for sorting the elements within a specific range.
 
@@ -52,6 +52,7 @@ count = {0,0,0,0,0,0,0,0,0}
            0 1 2 3 4 5 6 7 8 9 10 11
            
   ## PseudoCode:
+  ```
   countingsort(arr,size)
   {
     range = max_element in the array
@@ -65,11 +66,12 @@ count = {0,0,0,0,0,0,0,0,0}
         output[idx] = arr[i]
         count[arr[i]] = count[arr[i]]-1
   }
+  ```
   
   ## Implementation in C++
+ ``` 
   #include<bits/stdc++.h>
   using namespace std;
-  
   
   void countsort(int arr[], int size)
   {
@@ -118,7 +120,7 @@ count = {0,0,0,0,0,0,0,0,0}
      countsort(array,size);
      return 0;
   }
-    
+  ```  
  Time Complexity: O(n+k) where n is the size of input array and k is the range of input
  Space Complexity:O(n+k)
  
