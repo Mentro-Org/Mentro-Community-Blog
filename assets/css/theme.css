@@ -4,9 +4,9 @@
  *
  * @format
  */
-@import url('https://fonts.cdnfonts.com/css/metropolis');
+@import url('https://fonts.cdnfonts.com/css/montserrat');
 body {
-  font-family: "Metropolis";
+  font-family: "Montserrat";
   overflow-x: hidden;
   padding-top: 80px;
   -webkit-margin-collapse: separate;
@@ -478,7 +478,7 @@ a:hover {
 .navbar-brand {
   margin-right: 2rem;
   font-size: 1.55rem;
-  font-family: "Metropolis";
+  font-family: "Montserrat";
 }
 .dropdown-item {
   font-weight: 400;
@@ -578,7 +578,7 @@ a:hover {
     right: 0;
   }
   .jumbotron-home h1 {
-    font-family: "Metropolis";
+    font-family: "Montserrat";
     font-size: 2.4rem;
     font-weight: 700;
     line-height: 1.1;
@@ -911,7 +911,7 @@ ol.list-featured li:before {
   font-weight: bold;
   font-size: 2rem;
   margin-right: 0.5rem;
-  font-family: "Metropolis";
+  font-family: "Montserrat";
   line-height: 1;
   opacity: 0.1;
 }
@@ -937,10 +937,10 @@ footer {
 article {
   font-size: 20px;
   line-height: 1.86;
-  font-family: "Metropolis";
+  font-family: "Montserrat";
 }
 .article-headline {
-  font-family: "Metropolis";
+  font-family: "Montserrat";
   font-size: 3.2rem;
   font-weight: 400;
   line-height: 1.15;
@@ -963,7 +963,7 @@ article blockquote {
 }
 article blockquote:before {
   content: "“";
-  font-family: "Metropolis";
+  font-family: "Montserrat";
   font-size: 8rem;
   margin: -1rem 2rem 0 -3.9rem;
   position: absolute;
