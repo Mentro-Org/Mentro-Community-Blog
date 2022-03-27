@@ -8,10 +8,10 @@
  * @format
  */
 @font-face {
-  font-family: 'Metropolis Medium';
+  font-family: 'Montserrat Medium';
   font-style: normal;
   font-weight: 400;
-  src: local('Metropolis Medium'), url('/assets/fonts/Metropolis-Medium.woff') format('woff');
+  src: local('Montserrat Medium'), url('/assets/fonts/Montserrat-Medium.ttf') format('ttf');
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
