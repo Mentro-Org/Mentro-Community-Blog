@@ -4,10 +4,10 @@ jobs:
   run:
     runs-on: ubuntu-latest
     steps:
-      - uses: wow-actions/auto-comment@v1.0.7
+      - uses: wow-actions/auto-comment@v1
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          issuesOpened: >
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          issuesOpened: |
             Hello👋 @{{ author }}, I hope you are doing well!
             <br>
             Thank you for raising an issue. We will will investigate into the issue and get back to you as soon as possible.
@@ -15,9 +15,9 @@ jobs:
             <br>
             Feel free to join the community and collaborate ❤
             <br>
-            Join our Discord Community [here](https://discord.gg/uNQ7DWhcRC)
+            Join our Discord Community [here](https://mentro.tech/Discord)
 
-          pullRequestOpened: >
+          pullRequestOpened: |
             Hello👋 @{{ author }}, I hope you are doing well!
             <br>
             Thank you for raising your pull request and contributing to our Community 🎉
@@ -28,4 +28,4 @@ jobs:
             <br>
             Feel free to join the community and collaborate ❤
             <br>
-            Join our Discord Community [here](https://discord.gg/uNQ7DWhcRC)
+            Join our Discord Community [here](https://mentro.tech/Discord)
