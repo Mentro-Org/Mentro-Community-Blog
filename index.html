@@ -54,7 +54,7 @@ pagination:
                 {% if second_post.image %}
                 <div class="col-md-4">
                 <a href="{{second_post.url}}">
-                 <img class="w-100" src="{{ second_post.image}}" alt="{{ second_post.title }}">
+                 <img class="w-100 rounded" src="{{ second_post.image}}" alt="{{ second_post.title }}">
                 </a>
                 </div>
                 {% endif %}                
@@ -79,7 +79,7 @@ pagination:
                 {% if third_post.image %}
                 <div class="col-md-4">
                 <a href="{{third_post.url}}">
-                 <img class="w-100" src="{{ third_post.image }}" alt="{{ third_post.title }}">
+                 <img class="w-100 rounded" src="{{ third_post.image }}" alt="{{ third_post.title }}">
                 </a>
                 </div>
                 {% endif %}                
@@ -104,7 +104,7 @@ pagination:
                 {% if fourth_post.image %}
                 <div class="col-md-4">
                 <a href="{{fourth_post.url}}">
-                <img class="w-100" src="{{ fourth_post.image }}" alt="{{ fourth_post.title }}">
+                <img class="w-100 rounded" src="{{ fourth_post.image }}" alt="{{ fourth_post.title }}">
                 </a>
                 </div>
                 {% endif %}                
@@ -139,8 +139,8 @@ pagination:
                     </p>
                     <div href="{{post.url}}" class="btn btn-outline-success">Read More</div>
                 </div>
-                <div class="col-md-6 pr-lg-6 d-none d-md-block pr-0 rounded p-4">	
-                    <img style="height: 14rem" src="{{ post.image }}" alt="{{ post.title }}">
+                <div class="col-md-6 pl-lg-5 pr-lg-5 d-none d-md-block pr-0 p-4">	
+                    <img class="w-100 rounded" style="height: 14rem" src="{{ post.image }}" alt="{{ post.title }}">
                 </div>
             </div>
         </div>
