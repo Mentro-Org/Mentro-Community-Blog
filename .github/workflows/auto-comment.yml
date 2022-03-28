@@ -6,7 +6,7 @@ jobs:
     steps:
       - uses: wow-actions/auto-comment@v1
         with:
-          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           issuesOpened: |
             Hello👋 @{{ author }}, I hope you are doing well!
             <br>
