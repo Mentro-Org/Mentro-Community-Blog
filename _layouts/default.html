@@ -52,6 +52,7 @@
         "isAccessibleForFree": "True"
     }
     </script>
+
     {% endif %}
 
     <!-- Jquery on header to make sure everything works, the rest  of the scripts in footer for fast loading -->
@@ -62,30 +63,29 @@
 
     {% include tracking-header.html %}
 
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
 
 </head>
 
-<body id ="body" class="{% if page.url == "/" %} homefirstpage {% endif %} ">
+<body id ="body" class="{% if page.url == '/' %} homefirstpage {% endif %} ">
 
     <!-- Navbar -->
-    <nav id="MagicMenu" class="topnav navbar navbar-expand-lg fixed-top">
-    <div class="container">
-        <a class="navbar-brand" href="/index.html"><img src="{{ site.logo }}" alt="Anc Logo" style="height: 3rem;"></a>
-        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse collapse" id="navbarColor02" >
-            <ul class="navbar-nav mr-auto d-flex align-items-center">
-               {% include menu-header.html %}
-            </ul>
-        </div>
-        <!-- <label id="themeSwitch" class="switch">
-            <input type="checkbox" onclick="Theme()"/>
-            <span class="slider"></span>
-        </label> -->         
-    </div>
-    </nav>
 
+    <header class = "header fixed-top active ">
+        <a class="navbar-brand" href="/index.html"><img src="{{ site.logo }}" alt="Anc Logo" style="height: 3rem;"></a>
+    
+        <nav class = "navigation-bar">
+            <ul class = "navbar-list">
+                {% include menu-header.html %}
+            </ul>
+        </nav>
+
+        <div class="mobile-navbar-btn">
+            <ion-icon name="menu" class = "mobile-nav-icon"></ion-icon>
+            <ion-icon name="close" class = "mobile-nav-icon"></ion-icon>
+        </div>
+    </header>
+    
     <!-- Search Results -->
     <div id="lunrsearchresults">
         <ul class="mb-0"></ul>
@@ -93,7 +93,7 @@
 
     <!-- Content -->
     <main role="main" class="site-content">
-        {{ content }}
+      {{ content }}
     </main>
 
 
@@ -101,6 +101,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="/assets/js/theme.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    
 
     
 
@@ -122,6 +123,19 @@
     {% include tracking-footer.html %}
 
 </body>
+
+<!-- Navbar Script -->
+<script type="text/javascript">
+    const mobile_nav = document.querySelector(".mobile-navbar-btn");
+    const nav_header = document.querySelector(".header");
+    
+    const toggleNavbar = () => {
+        nav_header.classList.toggle("active");
+    };
+
+    mobile_nav.addEventListener('click', () => toggleNavbar());
+</script>
+
 <script>
     document.getElementById("copyright").innerHTML =  "@" + (new Date().getFullYear()) + " Mentro"
     if (localStorage.getItem("theme") === null) {
@@ -145,4 +159,5 @@
         } 
     }
 </script> 
+
 </html>
